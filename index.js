@@ -37,11 +37,13 @@ const sayilar = [
 
 //Örneğin çözümü:
 function KareninAlani(kenaruzunlugu) {
+  console.log("Karenin Alani: "+ kenaruzunlugu * kenaruzunlugu); //console log ile console yazdırıldı
   return kenaruzunlugu * kenaruzunlugu;
+  
 }
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-
+KareninAlani(10);
 /* GÖREV 1:  
 - CemberinCevresi fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
 	1. CemberinCevresi fonksiyonu parametre olarak sadece çemberin yarıçapını alacaktır. 
@@ -50,11 +52,15 @@ function KareninAlani(kenaruzunlugu) {
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
 
-function CemberinCevresi(/* kodlar buraya */) {
+function CemberinCevresi(/* kodlar buraya */cemberYariCap) {
   /* kodlar buraya */
+  let sonuc= 2 * pi *cemberYariCap; 
+  console.log("Çemberin çevresi= "+sonuc)
+  return sonuc;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+CemberinCevresi(5);
 
 /* 	GÖREV 2:  
 - CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
@@ -64,11 +70,16 @@ function CemberinCevresi(/* kodlar buraya */) {
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
+function CemberinAlani(/* kodlar buraya */cemberYariCap,piSayisi) {
   /* kodlar buraya */
+  piSayisi = pi;
+  let sonuc=  piSayisi* (cemberYariCap**2); //karesini alma metodlari: (cemberYariCap*cemberYariCap),(cemberYariCap**2),Math.pow(cemberYariCap,2);
+  console.log("Çemberin alani= "+sonuc)
+  return sonuc;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+CemberinAlani(15);
 
 /* 	GÖREV 3:
 	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
@@ -90,8 +101,8 @@ function CemberinAlani(/* kodlar buraya */) {
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
 let ucetambolunenler,
-  enkucuk,
-  enbuyuk,
+  enkucuk ,
+  enbuyuk ,
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar,
@@ -122,6 +133,8 @@ let ucetambolunenler,
 /* kodlar buraya */
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
+
+const as= ()=>{return console.log("Merhaba Workintech")}; as();
 
 function sa() {
   console.log("Kodlar çalışıyor");
