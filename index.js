@@ -196,6 +196,7 @@ TekrarliSayilar();
 const as= ()=>{return console.log("Merhaba Workintech")}; as();
 const as2= ()=>{return console.log("Ekstra Commit 1")}; as2();
 const as3= ()=>{return console.log("Ekstra Commit 2")}; as3();
+const as4= ()=>{return console.log("Ekstra Commit 3")}; as4();
 
 function sa() {
   console.log("Kodlar çalışıyor");
