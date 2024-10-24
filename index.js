@@ -172,21 +172,21 @@ SayiSirala();
 
 // 3f çözümü
 function TekrarliSayilar(){
-  const TekrarSayisi = {};
-  sayilar.forEach(sayi => {
+  tekraredensayilar = [];
+  const TekrarSayisi= {};
+
+  sayilar.forEach(sayi=> {
     if(TekrarSayisi[sayi]){
       TekrarSayisi[sayi]++
     }else{
       TekrarSayisi[sayi]=1;
     }
-});
-
-tekraredensayilar = [];
-for (const sayi in TekrarSayisi){
-  if(TekrarSayisi[sayi] > 1){
-    tekraredensayilar.push(`${sayi} sayisi ${TekrarSayisi[sayi]} kere tekrar edilmiştir`);
-}}
-//console.log("Tekrarlı Sayilar:  "+tekraredensayilar);
+  });
+    for ( const sayi in TekrarSayisi){
+      if(TekrarSayisi[sayi]>1){
+        tekraredensayilar.push(`${sayi} sayısı ${TekrarSayisi[sayi]} kere tekrar edilmiştir`);
+    }
+  }
 }
 TekrarliSayilar();
 /* kodlar buraya */
