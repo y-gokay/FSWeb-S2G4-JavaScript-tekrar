@@ -194,6 +194,7 @@ TekrarliSayilar();
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
 const as= ()=>{return console.log("Merhaba Workintech")}; as();
+const as= ()=>{return console.log("Ekstra Commit 1")}; as();
 
 function sa() {
   console.log("Kodlar çalışıyor");
